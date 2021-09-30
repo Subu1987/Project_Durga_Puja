@@ -1,0 +1,353 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: grey; */
+    overflow: hidden;
+}
+.box>div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    /* background-color: red; */
+    top: 100%;
+
+}
+.box>div>img{
+    width: 100%;
+}
+
+.box>div:nth-child(1){
+    left:50%;
+    animation: animate 11s ease-in infinite;
+}
+
+.box>div:nth-child(2){
+    left:18%;
+    animation: animate 10s ease-in infinite;
+}
+
+.box>div:nth-child(3){
+    left:66%;
+    animation: animate 11s ease-in infinite;
+}
+
+.box>div:nth-child(4){
+    left:39%;
+    animation: animate 10s ease-in infinite;
+}
+
+.box>div:nth-child(5){
+    left:80%;
+    animation: animate 12s ease-in infinite;
+}
+
+
+@keyframes animate {
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+        top: 100%;
+        
+    }
+    10%{
+        transform: scale(1.2) translateY(-90px) rotate(360deg);
+        opacity: 1;
+        top: 90%;
+        
+    }
+    20%{
+        transform: scale(1.2) translateY(-90px) rotate(360deg);
+        opacity: 1;
+        top: 75%;
+        
+    }
+    30%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+        top: 60%;
+    }
+
+    40%{
+        transform: scale(1.2) translateY(-90px) rotate(360deg);
+        opacity: 1;
+        top: 45%;
+    }
+    50%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+        top: 30%;
+    }
+    55%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+        top: 30%;
+    }
+
+
+    60%{
+        transform: scale(1.2) translateY(-90px) rotate(180deg);
+        opacity: 1;
+        top: 15%;
+    }
+
+    70%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+        top: 15%;
+    }
+    80%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+        top: 5%;
+    }
+
+    90%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 0;
+        top: 0%;
+    }
+
+    100%{
+        transform: scale(1.2) translateY(-90px) rotate(180deg);
+        opacity: 0;
+        top: 0%;
+    }
+
+}
+
+
+
+
+
+.container{
+    /* min-width: 100vw; */
+    height: 100vh;
+    /* background-color: gray; */
+    background-image: linear-gradient(#ff262691,#00000098),url(img/pexels-bharati-mahli-6138443.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.small_container{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    /* background-color: white; */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+
+}
+
+h1{
+    font-size: 50px;
+    letter-spacing: 10px;
+    font-weight: 600;
+}
+hr{
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid white;
+}
+p{
+    font-size: 50px;
+    margin-top: 10px;
+    word-spacing: 20px;
+    text-shadow: 0 0 10px rgb(214, 18, 18);
+}
+
+.maa{
+    font-size: 70px;
+    margin-top: 20px;
+    word-spacing: 20px;
+    color: white;
+    text-shadow:  0 0 10px rgb(7, 7, 7);
+}
+
+span {
+    font-size: 150px;
+}
+/* .inp{
+    padding: 12px 22px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: black;
+    box-shadow: inset -2px -2px 7px gray;
+}
+.btn{
+    padding: 10px 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: black;
+    
+} */
+
+
+@media (min-width:769px) {
+   
+    .small_container{
+        width: 100%;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        /* background-color: white; */
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+    
+    }
+
+    h1{
+        font-size: 50px;
+        letter-spacing: 10px;
+        font-weight: 600;
+    }
+
+    p{
+        font-size: 45px;
+        margin-top: 10px;
+        word-spacing: 20px;
+        text-shadow: 0 0 10px rgb(214, 18, 18);
+    }
+    
+    .maa{
+        font-size: 60px;
+        margin-top: 20px;
+        word-spacing: 20px;
+        color: white;
+        text-shadow:  0 0 10px rgb(7, 7, 7);
+    }
+
+    span {
+        font-size: 150px;
+    }
+
+}
+
+@media (min-width:482px) and (max-width:768px) {
+    
+       
+    .small_container{
+        width: 80%;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+    
+    }
+
+    h1{
+        font-size: 40px;
+        letter-spacing: 10px;
+        font-weight: 600;
+    }
+
+    p{
+        font-size: 40px;
+        margin-top: 10px;
+        word-spacing: 20px;
+        text-shadow: 0 0 10px rgb(214, 18, 18);
+    }
+    
+    .maa{
+        font-size: 55px;
+        margin-top: 20px;
+        word-spacing: 20px;
+        color: white;
+        text-shadow:  0 0 10px rgb(7, 7, 7);
+    }
+
+    span {
+        font-size: 100px;
+    }
+
+}
+
+
+
+
+@media (max-width:481px) {
+   
+    .small_container{
+        width: 90%;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+    
+    }
+    
+    h1{
+        font-size: 35px;
+        letter-spacing: 10px;
+        font-weight: 600;
+    }
+
+    p{
+        font-size: 30px;
+        margin-top: 10px;
+        word-spacing: 15px;
+        text-shadow: 0 0 10px rgb(214, 18, 18);
+    }
+    
+    .maa{
+        font-size: 30px;
+        margin-top: 20px;
+        word-spacing: 20px;
+        color: white;
+        text-shadow:  0 0 10px rgb(7, 7, 7);
+    }
+
+    span {
+        font-size: 80px;
+    }
+}
+
+
+@media (max-width:320px) {
+   
+    .small_container{
+        width: 80%;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+    
+    }
+    
+    h1{
+        font-size: 30px;
+        letter-spacing: 5px;
+        font-weight: 600;
+    }
+
+    p{
+        font-size: 20px;
+        margin-top: 10px;
+        word-spacing: 10px;
+        text-shadow: 0 0 10px rgb(214, 18, 18);
+    }
+    
+    .maa{
+        font-size: 20px;
+        margin-top: 20px;
+        word-spacing: 10px;
+        color: white;
+        text-shadow:  0 0 10px rgb(7, 7, 7);
+    }
+
+    span {
+        font-size: 60px;
+        text-align: center;
+    }
+}
