@@ -20,3 +20,9 @@ let x= setInterval(()=>{
 
 },1000);
 
+let playPauseEffect=()=>{
+
+    document.getElementById('playPauseEffect').style.animationPlayState="paused";
+
+
+}
