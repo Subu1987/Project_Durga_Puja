@@ -1,6 +1,6 @@
 
 
-let countDownDate= new Date("Oct 01, 2022 00:00:00").getTime();
+let countDownDate= new Date("Oct 20, 2023 00:00:00").getTime();
 
 let x= setInterval(()=>{
 
